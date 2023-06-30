@@ -1,0 +1,23 @@
+background-color: #382402;
+}
+
+#periodic-table {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+.element {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: orange;
+  cursor: pointer;
+  grid-row-start: span 5; /* Each element occupies two rows */
+}
+
+.element.expanded {
+  grid-column: span 2;
+  grid-row: span 3;
